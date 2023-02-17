@@ -6,7 +6,6 @@ import ContactList from "./components/ContactList"
 const App = () => {
 	return (
 		<div className="App">
-			<h3>Contact App</h3>
 			<Header />
 			<AddContact />
 			<ContactList />
