@@ -3,10 +3,9 @@ import user from "../images/user.webp"
 
 export default function ContactCard(props) {
 	const { name, email } = props.contact
-	const fontSize = "fontSize: '150%'"
 
 	return (
-		<div className="item" style={{ fontSize }}>
+		<div className="item" style={{ fontSize: "130%" }}>
 			<img src={user} alt="Avatar" className="ui avatar image" />
 
 			<div className="content">
