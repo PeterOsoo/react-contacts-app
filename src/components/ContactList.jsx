@@ -11,9 +11,8 @@ export default function ContactList (props) {
     )
   })
   return (
-    <div className='ui celled list'> {
-      DisplayContacts
-    }
+    <div className='ui celled list'> 
+    {DisplayContacts}
     </div>
   )
 }
