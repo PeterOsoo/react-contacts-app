@@ -8,16 +8,15 @@ export default function AddContact() {
 
   return (
     <div> 
-        <h2>Add Contact</h2>
-        <form action="" method="">
-          <label htmlFor=""> Name</label>
-          <input type="text" />
-          <br /> <br />
-          <label htmlFor=""> Number</label>
-          <input type="text" />
-          <br /> <br />
-          <button type="submit" onClick={ () => onSubmit()}>Submit</button>
-        </form>
+        <div className="ui main">
+          <h2>Add Contact</h2>
+          <form action="" className="ui form">
+            <div className="field">
+              <label htmlFor="">Name</label>
+              <input type="text" name="name" id="" placeholder='Name' />
+            </div>
+          </form>
+        </div>
     </div>
   )
 }
