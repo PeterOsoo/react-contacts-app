@@ -6,6 +6,7 @@ import ContactList from "./components/ContactList"
 
 const App = () => {
 	const [contacts, setContacts] = useState([])
+
 	return (
 		<div className="ui container">
 			<Header />

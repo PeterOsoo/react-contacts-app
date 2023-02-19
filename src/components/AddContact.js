@@ -9,7 +9,7 @@ export class AddContact extends Component {
 	AddContact = e => {
 		e.preventDefault()
 
-		if (this.state.name == "" && this.state.email == "") {
+		if (this.state.name === "" && this.state.email === "") {
 			alert("Mandatory fields")
 			return
 		}
