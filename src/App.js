@@ -4,7 +4,7 @@ import Header from "./components/Header"
 import AddContact from "./components/AddContact"
 import ContactList from "./components/ContactList"
 
-function App() {
+const App = () => {
 	const LOCAL_STORAGE_KEY = "contacts"
 	const [contacts, setContacts] = useState(
 		JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) ?? []
