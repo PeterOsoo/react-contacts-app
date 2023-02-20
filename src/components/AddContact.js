@@ -9,11 +9,14 @@ export class AddContact extends Component {
 	AddContact = e => {
 		e.preventDefault()
 
-		if (this.state.name === "" && this.state.email === "") {
-			alert("Mandatory fields")
+		if (this.state.name === "" || this.state.email === "") {
+			alert("Name and Email are mandatory fields")
 			return
 		}
 		console.log(this.state)
+
+		this.props.addContactHandler(this.state)
+		this.setState({ name: "", email: "" })
 	}
 
 	render() {
